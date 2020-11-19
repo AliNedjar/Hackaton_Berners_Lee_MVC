@@ -1,0 +1,37 @@
+{% extends 'layout.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/product.css">
+{% endblock %}
+
+{% block title %}Nos Coktails{% endblock %}
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-12">
+                <div class="title">
+                    <h1>Nos choix</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            {% for  in  %}
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/assets/image }}" class="card-img-top" alt="image de {{ .name }}">
+                        <div class="card-body">
+                            <div class="buttonCocktail">
+                                <a class="btn btn-dark" href="/product/list/{{ .id }}" title="Categorie {{ .name }}">{{ .name }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+{% endblock %}
