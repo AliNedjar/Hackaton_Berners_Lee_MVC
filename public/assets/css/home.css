@@ -1,4 +1,8 @@
 .carousel-item > img {
+    border : 5px solid var(--dark) ;
+}
+
+img {
     border-radius : 5px;
 }
 
@@ -7,5 +11,67 @@
 }
 
 #thirsty {
-    margin-top: var(--spacing);
+    margin: var(--spacing-4) 0;
+}
+
+h1 {
+    text-align: center;
+    margin: var(--spacing-4);
+    color : var(--title-color);
+    background-color: var(--light);
+    padding: var(--spacing) 0;
+}
+
+h2 {
+    text-align: center;
+    margin: calc(var(--spacing-4) + var(--spacing-4)) var(--spacing-4);
+    color : var(--title-color);
+    background-color: var(--light);
+    padding: var(--spacing) 0;
+}
+
+h3 {
+    color : var(--dark);
+    padding-bottom: var(--spacing-2);
+    border-bottom: 2px solid var(--dark);
+}
+
+.concept-part1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(var(--spacing-4) + var(--spacing-4));
+}
+
+.concept-part2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: calc(var(--spacing-4) + var(--spacing-4));
+}
+
+.concept-part3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(var(--spacing-4) + var(--spacing-4));
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin : 0 calc(var(--spacing-4) + var(--spacing-4));
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin : 0 calc(var(--spacing-4) + var(--spacing-4));
+}
+
+.text3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin : 0 calc(var(--spacing-4) + var(--spacing-4));
 }
