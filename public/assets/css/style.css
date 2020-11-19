@@ -6,7 +6,7 @@
     --primary-color: #e0cda9;
     --secondary-color: #e3a422;
     --light : #FFFEFC;
-    --dark : #1C1504;
+    --dark : #1c1504;
     --title-color: #9a0405;
     --spacing:8px;
     --spacing-2:calc(var(--spacing) * 2);
@@ -25,4 +25,32 @@ body {
     font-family: var(--font-text);
     background-color: var(--primary-color);
 }
+
+/* footer */
+footer {
+    background-color: var(--light);
+    height: 160px;
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+}
+
+.copyright {
+    margin-bottom: 0;
+}
+
+footer,.row {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--dark);
+}
+/* end-footer */
 
