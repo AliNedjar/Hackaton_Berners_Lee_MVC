@@ -26,3 +26,13 @@ body {
     background-color: var(--primary-color);
 }
 
+section {
+    padding: calc(105px * 3);
+}
+
+.navbar {
+    width: 100vw;
+    z-index: 3;
+    position: fixed;
+    margin-bottom: var(--spacing-3);
+}
