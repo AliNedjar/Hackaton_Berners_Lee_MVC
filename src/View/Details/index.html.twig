@@ -3,21 +3,23 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="pillars"><img src="/assets/images/greek-pillars.png/"><h1 class="text-center py-5">All Cocktails</h1><img src="/assets/images/greek-pillars.png/"></div>
-    <div class="row">
-        {% for cocktail in cocktails.drinks %}
-            <div class="col-12 col-lg-3">
-                <div class="card">
-                    <img src="{{ cocktail.strDrinkThumb }}" class="card-img-top" alt="{{ cocktail.strDrink }}">
-                    <div class="card-body">
-                        <h5 class="card-title text-truncate">{{ cocktail.strDrink }}</h5>
+    <div class="container-fluid">
+        <div class="pillars"><img src="/assets/images/greek-pillars.png/">
+            <h1 class="text-center py-5">All Cocktails</h1><img src="/assets/images/greek-pillars.png/"></div>
+        <div class="row">
+            {% for cocktail in cocktails.drinks %}
+                <div class="col-12 col-lg-3">
+                    <div class="card">
+                        <img src="{{ cocktail.strDrinkThumb }}" class="card-img-top" alt="{{ cocktail.strDrink }}">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-truncate">{{ cocktail.strDrink }}</h5>
+                            <a class="btn w-50" href="/Ingredients/recipe/{{ cocktail.idDrink }}">Details</a>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
-</div>
 
 {% endblock %}
