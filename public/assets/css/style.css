@@ -5,7 +5,7 @@
 :root {
     --primary-color: #e0cda9;
     --secondary-color: #e3a422;
-    --light : #FFFEFC;
+    --light : #fffefc;
     --dark : #1c1504;
     --title-color: #9a0405;
     --spacing:8px;
@@ -14,6 +14,8 @@
     --spacing-4:calc(var(--spacing) * 4);
     --font-text: 'Modern Antiqua', cursive;
     --font-title: 'Cinzel', serif;
+    --text-color: #dc3545;
+    --card-background: rgba(255, 254, 252, 0.9);
 }
 
 * {
@@ -23,6 +25,7 @@
 
 body {
     font-family: var(--font-text);
+    color: var(--text-color);
     background-image: url('/assets/images/coliseum.jpg');
     background-size: cover;
     position: absolute;
@@ -35,14 +38,21 @@ body {
     top:0;
     margin-bottom: var(--spacing-3);
 }
+
+.navbar a {
+    font-weight: bold;
+    font-size: var(--spacing-3);
+    margin-left: 50px;
+}
+
 .card img{
     border-radius: 0;
 }
 
-
 .card {
     margin-bottom: 40px;
 }
+
 /* footer */
 footer {
     background-color: var(--light);
@@ -50,7 +60,7 @@ footer {
     width: 80vh;
     margin: 0;
     padding: 0;
-    color: var(--dark);
+    color: var(--text-color);
 }
 
 .copyright {
@@ -61,15 +71,54 @@ footer,.row{
     margin: 0;
 }
 
-
 footer a {
     text-decoration: none;
-    color: var(--dark);
+    color: var(--text-color);
 }
 
 footer a:hover {
     text-decoration: none;
-    color: var(--dark);
+    color: var(--text-color);
 }
+
+.pillars {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-4) 0;
+}
+
+.btn {
+    background-color: var(--text-color);
+    color: var(--light);
+
+}
+
+.btn:hover {
+    background-color: var(--light);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.badge {
+    background-color: var(--secondary-color);
+    color: var(--light);
+}
+
+h1 {
+    font-family: var(--font-title);
+    text-align: center;
+    margin: var(--spacing-4);
+    color : var(--secondary-color);
+    padding: var(--spacing-4);
+}
+
+.ceasar {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-4) 0;
+}
+
 /* end-footer */
 

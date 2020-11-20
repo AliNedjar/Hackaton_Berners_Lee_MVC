@@ -4,7 +4,7 @@
 
 {% block content %}
     <div class="container">
-        <h1 class="text-center text-danger py-5">{{ cocktail.strCategory }}</h1>
+        <div class="pillars"><img src="/assets/images/greek-pillars.png/"><h1 class="text-center py-5">Choose your Favorite One</h1><img src="/assets/images/greek-pillars.png/"></div>
         <div class="row">
             {% for category in categories.drinks %}
                 <div class="col-12 col-lg-3">
@@ -12,7 +12,7 @@
                         <img src="{{ category.strDrinkThumb }}" class="card-img-top" alt="cocktail">
                         <div class="card-body">
                             <h5 class="card-title text-truncate">{{ category.strDrink }}</h5>
-                            <a href="/Ingredients/recipe/{{ category.idDrink }}" class="btn btn-info">Make it !</a>
+                            <a href="/Ingredients/recipe/{{ category.idDrink }}" class="btn">Make it !</a>
                         </div>
                     </div>
                 </div>
