@@ -10,7 +10,7 @@ class CocktailsManager
 {
     public function getCocktailsCategories(): array
     {
-        $client =  HttpClient::create();
+        $client = HttpClient::create();
         $response = $client->request('GET', 'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list');
 
         $statusCode = $response->getStatusCode();
@@ -25,10 +25,9 @@ class CocktailsManager
 
     public function getCocktailsByCategories(string $category): array
     {
-        $client =  HttpClient::create();
+        $client = HttpClient::create();
         $response = $client->request('GET', 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=' . $category);
-         $statusCode = $response->getStatusCode();
-      
+        $statusCode = $response->getStatusCode();
         if ($statusCode === 200) {
             $content = $response->toArray();
         } else {
