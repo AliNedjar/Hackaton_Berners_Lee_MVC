@@ -105,5 +105,20 @@ footer a:hover {
     color: var(--light);
 }
 
+h1 {
+    font-family: var(--font-title);
+    text-align: center;
+    margin: var(--spacing-4);
+    color : var(--secondary-color);
+    padding: var(--spacing-4);
+}
+
+.ceasar {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-4) 0;
+}
+
 /* end-footer */
 
