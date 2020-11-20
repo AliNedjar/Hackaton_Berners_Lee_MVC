@@ -32,12 +32,24 @@ body {
 
 section {
 
+    background-image: url("/assets/images/Pillierdouble.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .navbar {
     width: 100vw;
-    top: 0;
+    top:0;
+}
+
     margin-bottom: var(--spacing-3);
+}
+.card img{
+    border-radius: 0;
 }
 
 
