@@ -24,12 +24,6 @@
 body {
     font-family: var(--font-text);
     background-color: var(--primary-color);
-    background-image: url("/assets/images/Pillierdouble.png");
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
 }
 
 
@@ -43,6 +37,7 @@ body {
 footer {
     background-color: var(--light);
     height: 160px;
+    width: 80vh;
     margin: 0;
     padding: 0;
     color: var(--dark);
@@ -52,9 +47,10 @@ footer {
     margin-bottom: 0;
 }
 
-footer,.row {
+footer,.row{
     margin: 0;
 }
+
 
 footer a {
     text-decoration: none;
