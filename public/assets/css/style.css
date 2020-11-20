@@ -27,12 +27,15 @@ body {
 }
 
 section {
-    padding: calc(105px * 3);
+
 }
 
 .navbar {
     width: 100vw;
-    z-index: 3;
-    position: fixed;
+    top: 0;
     margin-bottom: var(--spacing-3);
+}
+
+.card {
+    margin-bottom: 40px;
 }
