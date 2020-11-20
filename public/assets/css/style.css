@@ -51,6 +51,7 @@ body {
 }
 
 .card {
+    background-color: var(--card-background);
     margin-bottom: 40px;
 }
 
