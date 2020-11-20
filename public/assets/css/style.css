@@ -5,7 +5,7 @@
 :root {
     --primary-color: #e0cda9;
     --secondary-color: #e3a422;
-    --light : #FFFEFC;
+    --light : #fffefc;
     --dark : #1c1504;
     --title-color: #9a0405;
     --spacing:8px;
@@ -15,6 +15,7 @@
     --font-text: 'Modern Antiqua', cursive;
     --font-title: 'Cinzel', serif;
     --text-color: #dc3545;
+    --card-background: rgba(255, 254, 252, 0.9);
 }
 
 * {
@@ -24,6 +25,7 @@
 
 body {
     font-family: var(--font-text);
+    color: var(--text-color);
     background-image: url('/assets/images/coliseum.jpg');
     background-size: cover;
     position: absolute;
@@ -58,8 +60,7 @@ footer {
     width: 80vh;
     margin: 0;
     padding: 0;
-    bottom: 0;
-    color: var(--dark);
+    color: var(--text-color);
 }
 
 .copyright {
@@ -72,12 +73,12 @@ footer,.row{
 
 footer a {
     text-decoration: none;
-    color: var(--dark);
+    color: var(--text-color);
 }
 
 footer a:hover {
     text-decoration: none;
-    color: var(--dark);
+    color: var(--text-color);
 }
 
 .pillars {

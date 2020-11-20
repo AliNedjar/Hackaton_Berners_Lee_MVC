@@ -1,12 +1,9 @@
+.background {
+    background-color: var(--card-background);
+}
 
 .carousel-item > img {
     border : 5px solid var(--dark) ;
-}
-
-
-
-img {
-    border-radius : 5px;
 }
 
 .container {
@@ -19,23 +16,26 @@ img {
 }
 
 h1 {
+    font-family: var(--font-title);
     text-align: center;
     margin: var(--spacing-4);
-    color : var(--title-color);
+    color : var(--secondary-color);
     padding: var(--spacing-4);
 }
 
 h2 {
+    font-family: var(--font-title);
     text-align: center;
     margin: calc(var(--spacing-4) + var(--spacing-2)) var(--spacing-4);
-    color : var(--title-color);
+    color : var(--secondary-color);
     padding: var(--spacing-4);
 }
 
 h3 {
-    color : var(--dark);
+    font-family: var(--font-title);
+    color : var(--secondary-color);
     padding-bottom: var(--spacing-2);
-    border-bottom: 2px solid var(--dark);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .concept-part1 {
