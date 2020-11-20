@@ -74,5 +74,11 @@ footer a:hover {
     text-decoration: none;
     color: var(--text-color);
 }
-/* end-footer */
 
+.pillars {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-4);
+}
+/* end-footer */
