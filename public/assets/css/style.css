@@ -24,12 +24,17 @@
 body {
     font-family: var(--font-text);
     background-color: var(--primary-color);
+}
+
+section {
+
     background-image: url("/assets/images/Pillierdouble.png");
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
 }
 
 .navbar {
@@ -43,6 +48,10 @@ body {
     border-radius: 0;
 }
 
+
+.card {
+    margin-bottom: 40px;
+}
 /* footer */
 footer {
     background-color: var(--light);
@@ -70,3 +79,4 @@ footer a:hover {
     color: var(--dark);
 }
 /* end-footer */
+

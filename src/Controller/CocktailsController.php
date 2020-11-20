@@ -13,4 +13,12 @@ class CocktailsController extends AbstractController
 
         return $this->twig->render('Cocktails/cocktails.html.twig', ['cocktails' => $cocktails]);
     }
+
+    public function show(string $category)
+    {
+        $cocktailsManager = new CocktailsManager();
+        $categories = $cocktailsManager->getCocktailsByCategories($category);
+
+        return $this->twig->render('Cocktails/cockatrice.html.twig', ['categories' => $categories]);
+    }
 }

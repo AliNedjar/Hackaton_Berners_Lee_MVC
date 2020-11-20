@@ -1,0 +1,22 @@
+{% extends 'layout.html.twig' %}
+
+
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center text-danger py-5">{{ cocktail.strCategory }}</h1>
+        <div class="row">
+            {% for category in categories.drinks %}
+                <div class="col-12 col-lg-3">
+                    <div class="card">
+                        <img src="{{ category.strDrinkThumb }}" class="card-img-top" alt="cocktail">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ category.strDrink }}</h5>
+                            <a href="#" class="btn btn-info">Voir les ingrédients</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
