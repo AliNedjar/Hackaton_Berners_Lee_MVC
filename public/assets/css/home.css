@@ -77,3 +77,23 @@ h3 {
     justify-content: space-evenly;
     margin : 0 calc(var(--spacing-4) + var(--spacing-4));
 }
+
+@media screen and (max-width: 1200px) {
+    .concept-part1,
+    .concept-part2,
+    .concept-part3 {
+        flex-direction: column;
+    }
+
+    .background {
+        width: 70vw;
+    }
+
+    h3 {
+        margin-top : var(--spacing-3);
+    }
+
+    .image > img {
+        width : 70vw;
+    }
+}
