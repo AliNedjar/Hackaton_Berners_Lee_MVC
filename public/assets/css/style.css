@@ -40,8 +40,6 @@ section {
 .navbar {
     width: 100vw;
     top:0;
-}
-
     margin-bottom: var(--spacing-3);
 }
 .card img{
