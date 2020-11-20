@@ -26,13 +26,19 @@ body {
     background-color: var(--primary-color);
 }
 
-
 .navbar {
     width: 100vw;
-    top: 0;
+    top:0;
     margin-bottom: var(--spacing-3);
 }
+.card img{
+    border-radius: 0;
+}
 
+
+.card {
+    margin-bottom: 40px;
+}
 /* footer */
 footer {
     background-color: var(--light);
@@ -62,3 +68,4 @@ footer a:hover {
     color: var(--dark);
 }
 /* end-footer */
+

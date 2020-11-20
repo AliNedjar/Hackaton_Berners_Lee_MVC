@@ -9,6 +9,8 @@
 
 namespace App\Controller;
 
+use App\Model\CocktailsManager;
+
 class HomeController extends AbstractController
 {
     /**
@@ -21,6 +23,16 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Home/index.html.twig', []);
+        $cocktailsManager = new CocktailsManager();
+        $cocktails = $cocktailsManager->getTopCocktails();
+
+        $cocktailsManager = new CocktailsManager();
+        $cocktails1 = $cocktailsManager->getTopCocktails();
+
+        $cocktailsManager = new CocktailsManager();
+        $cocktails2 = $cocktailsManager->getTopCocktails();
+
+        return $this->twig->render('Home/index.html.twig', ['cocktails' => $cocktails,
+            'cocktails1' => $cocktails1, 'cocktails2' => $cocktails2]);
     }
 }
