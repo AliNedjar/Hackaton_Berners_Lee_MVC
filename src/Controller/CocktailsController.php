@@ -18,7 +18,6 @@ class CocktailsController extends AbstractController
     {
         $cocktailsManager = new CocktailsManager();
         $categories = $cocktailsManager->getCocktailsByCategories($category);
-
         return $this->twig->render('Cocktails/cockatrice.html.twig', ['categories' => $categories]);
     }
 }

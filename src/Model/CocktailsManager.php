@@ -28,7 +28,7 @@ class CocktailsManager
         $client =  HttpClient::create();
         $response = $client->request('GET', 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=' . $category);
          $statusCode = $response->getStatusCode();
-      
+
         if ($statusCode === 200) {
             $content = $response->toArray();
         } else {
