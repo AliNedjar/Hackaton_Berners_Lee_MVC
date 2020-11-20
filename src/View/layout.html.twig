@@ -21,12 +21,15 @@
 <body>
 
 {% block header %}
-   {% block navbar %}{% include 'include/_navbar.html.twig' %}{% endblock %}
+   {% block navbar %}{% include 'Include/_navbar.html.twig' %}{% endblock %}
 {% endblock %}
 
 <section>
 {% block content %}{% endblock %}
 </section>
+
+{% block footer %}{%  include 'Include/_footer.html.twig' %} {% endblock %}
+
 {% block javascript %}{% endblock %}
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
