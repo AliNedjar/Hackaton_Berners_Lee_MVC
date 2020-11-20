@@ -11,8 +11,8 @@
                     <div class="card">
                         <img src="{{ category.strDrinkThumb }}" class="card-img-top" alt="cocktail">
                         <div class="card-body">
-                            <h5 class="card-title">{{ category.strDrink }}</h5>
-                            <a href="#" class="btn btn-info">Voir les ingrédients</a>
+                            <h5 class="card-title text-truncate">{{ category.strDrink }}</h5>
+                            <a href="/Ingredients/recipe/{{ category.idDrink }}" class="btn btn-info">Make it !</a>
                         </div>
                     </div>
                 </div>
